@@ -1,0 +1,15 @@
+# Poem_Genre_Classification
+This is a repo on classifying poems into 4 different genres- Nature, Love, Religion and Mythology &amp; Folklore
+1. DATASET CREATION-
+
+The dataset wasn't readily available online and when it was, it was found to be in a very disheveled state. So, I decided to scrape the data by writing a script and running it on poemfoundation.org and other such sites where poems by genre would be archived. The number of poems was kept limited to 401 only so as to satisfy the word limit specified. Once the data had been collected in a csv file, it was analysed to confirm that no erroneous entries had been made accidentally. Then, the dataset was shuffled to remove any possibility of bias.
+
+2. MODEL 1- MULTINOMIAL NAIVE BAYES
+
+Firstly, vectorization using tfidfvectorizer was performed so as to convert data into numeric form to make it suitable for analysis and was followed by an 80:20 split into the ttraining and testing sets. Then, Multinomial Naive Bayes algorithm was chosen as the first classifier due to its extreme simplicity which makes it easier to debug and also the fact that it converges quite quickly on less data compared to other algorithms such as Logistic Regression etc. The results obtained were quite encouraging with a test accuracy of 61.72%.
+
+3. MODEL 2- RANDOM FOREST CLASSIFIER
+
+Now, I decided to use a bagging model since my approach with Decision Trees wasn't yielding positive results. Due to my experience with Decision Trees, I wanted to apply an ensemble method which led me to Random Forest. I immediately got good scores from 58-62% with varying parameter values. After a number of trials, I managed to achieve a maximum accuracy of 65.43% which was an above average performance for such a small dataset.
+
+I refrained from using Deep Learning approaches like RNNs, or Recurrent CNNs due to the limitation on the size of the dataset which would have risked overfitting. I believe that with increase in the dataset and provided more time, I can experiment with other new approaches to achieve even better results.
