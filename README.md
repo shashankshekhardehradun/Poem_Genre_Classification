@@ -2,7 +2,7 @@
 This is a repo on classifying poems into 4 different genres- Nature, Love, Religion and Mythology &amp; Folklore
 1. DATASET CREATION-
 
-The dataset wasn't readily available online and when it was, it was found to be in a very disheveled state. So, I decided to scrape the data by writing a script and running it on poemfoundation.org and other such sites where poems by genre would be archived. The number of poems was kept limited to 401 only so as to satisfy the word limit specified. Once the data had been collected in a csv file, it was analysed to confirm that no erroneous entries had been made accidentally. Then, the dataset was shuffled to remove any possibility of bias.
+The dataset wasn't readily available online and when it was, it was found to be in a very disheveled state. So, I decided to scrape the data by writing a script and running it on poemfoundation.org and other such sites where poems by genre would be archived. The number of poems was kept limited to 401 only so as to satisfy the word limit specified (50k words or less). Once the data had been collected in a csv file, it was analysed to confirm that no erroneous entries had been made accidentally. Then, the dataset was shuffled to remove any possibility of bias.
 
 2. MODEL 1- MULTINOMIAL NAIVE BAYES
 
